@@ -31,7 +31,7 @@ def get_response():
     user_input = request.form.get("user_input")
     if user_input.strip() != "":
         response = query({"question": user_input})
-        bot_response = response.get("text")
+        bot_response = response
         return jsonify({"bot_response": bot_response})
     return jsonify({"bot_response": ""})
 
