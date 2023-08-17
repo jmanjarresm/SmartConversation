@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 app.static_folder = 'static'
 
-API_URL = "https://flowisetest-1.onrender.com/api/v1/prediction/aefb5856-f908-4b3a-8a51-f0ad6210cf70"
+API_URL = "https://flowisetest-1.onrender.com/api/v1/prediction/dbaf12c5-c585-42e3-a057-ce4e41dbbd26"
 
 def query(payload):
     response = requests.post(API_URL, json=payload)
